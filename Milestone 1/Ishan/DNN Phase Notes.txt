@@ -1,0 +1,22 @@
+Notes for the DNN Phase of the ECE 755 Project
+DNN Phase aka Milestone 1
+
+So core of the DNN is made of:
+    4 Inputs: 5 Bit Signed
+        4 Neuron Input Layer
+            4 Hidden Neurons
+                ReLU Unit
+    2 Outputs: 17 Bit Signed
+
+The other secondary status inputs & outputs for the module
+    Input Ready : Can use to power gate elements down the pipeline. 
+    Output Ready: Each output has it's own ready signal (Not very useful right now.)
+
+Each Neuron is made of: MAC Unit
+    Split MAC Design (Implicit Pipeline)
+    Multiply inputs in first cycle --> Buffer to Pipeline
+        Read from Pipeline --> Accumulate
+
+So first let's make the split MAC.
+    5 bit Operands --> 10 bit multiply results --> 12 bit neuron output (adding four 10 bit numbers)
+    Use the input ready signal as a power gate. 
