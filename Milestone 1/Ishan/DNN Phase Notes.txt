@@ -20,3 +20,10 @@ Each Neuron is made of: MAC Unit
 So first let's make the split MAC.
     5 bit Operands --> 10 bit multiply results --> 12 bit neuron output (adding four 10 bit numbers)
     Use the input ready signal as a power gate. 
+
+Implemented a 17 bit Neuron for the Output Layer. 
+Note:
+    Some confusion here, regarding whether the outputs of the ReLU 
+    are supposed to be added in the final layer or not.
+    Version 0 of the neuron adds the ReLU outputs.
+    All weight vectors are assumed static. 
