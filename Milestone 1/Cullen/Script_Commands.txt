@@ -1,0 +1,13 @@
+To run the provided tb
+  make run_tb1
+  
+To run custom tb
+  make run_tb2
+  
+To run both
+  make run_both
+
+make or make compile will compile all files
+compilation also occurs when tbs are ran
+
+need to already have work folder in directory (bug, should make work directory)

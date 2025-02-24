@@ -28,12 +28,18 @@ module Input_layer
 always_ff @(posedge clk, negedge rst_n)
     begin
         if (~rst_n)
-            {output_ready, out0, out1, out2, out3} <= '0;
-        else if (input_ready)
+            // {output_ready ,out0, out1, out2, out3} <= '0;
+             {out0, out1, out2, out3} <= '0;
+        else
             begin
                 output_ready <= input_ready;
-                {out0, out1, out2, out3} <= {in0, in1, in2, in3};
+                if (input_ready)
+                    {out0, out1, out2, out3} <= {in0, in1, in2, in3};
+                else
+                    {out0, out1, out2, out3} <= '0;
             end
     end
+
+// assign output_ready = input_ready;
 
 endmodule

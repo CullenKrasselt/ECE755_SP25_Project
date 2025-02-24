@@ -1,0 +1,74 @@
+vlog -work work ../Ishan/*.sv
+QuestaSim vlog 2023.2_1 Compiler 2023.05 May 12 2023
+Start time: 17:03:27 on Feb 24,2025
+vlog -work work ../Ishan/DNN.sv ../Ishan/Hidden_layer.sv ../Ishan/Input_layer.sv ../Ishan/Neuron_12bit.sv ../Ishan/Neuron_17bit.sv ../Ishan/Output_layer.sv ../Ishan/ReLU.sv ../Ishan/top.sv 
+-- Compiling module DNN
+-- Compiling module Hidden_layer
+-- Compiling module Input_layer
+-- Compiling module Neuron_12bit
+-- Compiling module Neuron_17bit
+-- Compiling module Output_layer
+-- Compiling module ReLU
+-- Compiling module top
+
+Top level modules:
+	top
+End time: 17:03:27 on Feb 24,2025, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+vlog -work work ../../MS_1_DNN_impl/top_tb.sv
+QuestaSim vlog 2023.2_1 Compiler 2023.05 May 12 2023
+Start time: 17:03:27 on Feb 24,2025
+vlog -work work ../../MS_1_DNN_impl/top_tb.sv 
+-- Compiling module tb_top
+
+Top level modules:
+	tb_top
+End time: 17:03:27 on Feb 24,2025, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+vlog -work work milestone1_tb.sv
+QuestaSim vlog 2023.2_1 Compiler 2023.05 May 12 2023
+Start time: 17:03:27 on Feb 24,2025
+vlog -work work milestone1_tb.sv 
+-- Compiling module milestone1_tb
+
+Top level modules:
+	milestone1_tb
+End time: 17:03:27 on Feb 24,2025, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+Running milestone1_tb...
+vsim -c work.milestone1_tb -do "run -all; quit" | tee simulation2.log
+Reading pref.tcl
+
+# 2023.2_1
+
+# vsim -c work.milestone1_tb -do "run -all; quit" 
+# Start time: 17:03:27 on Feb 24,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# //  Questa Sim
+# //  Version 2023.2_1 linux May 12 2023
+# //
+# //  Copyright 1991-2023 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.milestone1_tb(fast)
+# run -all
+# Output with provided values correct
+# Output with random values correct
+# Output with all 0s correct
+# Output with max positive values correct
+# Output with max negative values correct
+# Now to Fill the pipeline!!
+# Break at milestone1_tb.sv line 311
+# Stopped at milestone1_tb.sv line 311
+#  quit
+# End time: 17:03:28 on Feb 24,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

@@ -31,11 +31,11 @@ module Neuron_17bit
 // Internal Variables
 
 // Multiply Phase
-logic signed [9:0] r0, r1, r2, r3;
+logic signed [14:0] r0, r1, r2, r3;
 
 // Accumulate Pipe
 logic input_ready_ff;
-reg signed [9:0] r0_ff, r1_ff, r2_ff, r3_ff;
+reg signed [14:0] r0_ff, r1_ff, r2_ff, r3_ff;
 
 //Step 1: Multiply all the Input & Weight Pairs
 always_comb 

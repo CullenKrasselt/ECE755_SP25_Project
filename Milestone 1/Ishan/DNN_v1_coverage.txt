@@ -1,0 +1,80 @@
+Coverage Report Summary Data by file
+
+=================================================================================
+=== File: /filespace/k/krasselt/ECE755/ECE755_SP25_Project/Milestone 1/Cullen/milestone1_tb.sv
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                        10         5         5    50.00%
+    Conditions                      10         0        10     0.00%
+    Statements                     218       198        20    90.82%
+    Toggles                        356       337        19    94.66%
+
+=================================================================================
+=== File: /filespace/k/krasselt/ECE755/ECE755_SP25_Project/Milestone 1/Ishan/DNN.sv
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Toggles                        596       535        61    89.76%
+
+=================================================================================
+=== File: /filespace/k/krasselt/ECE755/ECE755_SP25_Project/Milestone 1/Ishan/Hidden_layer.sv
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Toggles                        312       284        28    91.02%
+
+=================================================================================
+=== File: /filespace/k/krasselt/ECE755/ECE755_SP25_Project/Milestone 1/Ishan/Input_layer.sv
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                         4         3         1    75.00%
+    Statements                       5         4         1    80.00%
+    Toggles                         88        86         2    97.72%
+
+=================================================================================
+=== File: /filespace/k/krasselt/ECE755/ECE755_SP25_Project/Milestone 1/Ishan/Neuron_12bit.sv
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                         6         5         1    83.33%
+    Statements                      18        17         1    94.44%
+    Toggles                        274       264        10    96.35%
+
+=================================================================================
+=== File: /filespace/k/krasselt/ECE755/ECE755_SP25_Project/Milestone 1/Ishan/Neuron_17bit.sv
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                         6         5         1    83.33%
+    Statements                      18        17         1    94.44%
+    Toggles                        420       354        66    84.28%
+
+=================================================================================
+=== File: /filespace/k/krasselt/ECE755/ECE755_SP25_Project/Milestone 1/Ishan/Output_layer.sv
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Toggles                        254       219        35    86.22%
+
+=================================================================================
+=== File: /filespace/k/krasselt/ECE755/ECE755_SP25_Project/Milestone 1/Ishan/ReLU.sv
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                        16        16         0   100.00%
+    Conditions                       4         4         0   100.00%
+    Statements                       4         4         0   100.00%
+    Toggles                        196       156        40    79.59%
+
+=================================================================================
+=== File: /filespace/k/krasselt/ECE755/ECE755_SP25_Project/Milestone 1/Ishan/top.sv
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Toggles                        358       337        21    94.13%
+
+
+Total Coverage By File (code coverage only, filtered view): 72.72%
+

@@ -32,6 +32,8 @@ input clk;
 output [16:0] out0, out1; 
 output out0_ready, out1_ready; 
 
+logic rst_n;
+assign rst_n = 1'b1;
 // Implementation of the neural network 
 // Instantiating the DNN
 DNN iDNN (.*);
