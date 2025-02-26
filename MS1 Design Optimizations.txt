@@ -1,0 +1,53 @@
+Design Notes for Milestone 1 for ECE 755 Project
+Basic Design:
+    Input Layer:
+        This stage simply is a collection of flip flops for collecting the inputs 
+        of the DNN design. 
+    Hidden Layer:
+        This stage is implemented using 12 bit Neurons, with a split Neuron design.
+        The split neuron design has split the MAC function into two clock cycles.
+        The first cycle performs the multiplication and writes the results into the 
+        pipeline flop. 
+        The second cycle will then perform the addition operation of the Neuron. 
+    ReLU Stage:
+        The ReLU stage is immediately after the addition step of the Hidden Layer.
+    Output Layer:
+        This stage is implemented using 17 bit Neurons, which also have the same
+        split Neuron design, just like the 12 bit Neuron design. 
+        This Layer also takes 2 cycles to generate the results.
+    
+    We have also added an asynchronous active low reset signal for the entire DNN module.
+
+Optimizations made:
+    Input Layer:
+        Using the Input Ready signal to flop the inputs only when the signal is high. 
+        Else, the inputs are set to 0.
+        
+        The Input Ready signal is also propogated to 
+        the further stages, allowing some power saving benefits.
+    
+    Hidden Layer:
+        The split MAC design for the Neuron allows for faster clock frequencies, 
+        as the Multiply operation is done during the first clock cycle, followed
+        by the addition operation in the second clock cycle. 
+        
+        The Input Ready signal for this module only performs multiplication when
+        the signal is high, else the inputs for the pipeline are set to 0.
+        
+        The addition phase adds regardless, however, as the input ready previously
+        sets the addunds correctly, allowing for power savings.
+        
+        The Hidden Layer will only generate an output ready when all the 4 neurons 
+        are ready with their results.
+    
+    ReLU Stage:
+        The ReLU occurs immediately after the Hidden Layer, as there is no need
+        for another pipeline flop at this stage. 
+        
+        The ReLU is very simple logic, & the penalty for not pipelining the ReLU is minimal.
+        
+        Also, the input ready signal for this module allows for power saving here.
+    
+    Output Layer:
+        Similar to the Hidden Layer, this stage too has the same optimizations 
+        applied to the 17 bit Neurons as the Hidden Layer's 12 bit Neurons.
