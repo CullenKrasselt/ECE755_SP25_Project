@@ -19,29 +19,31 @@ out10_ready_node2, out11_ready_node2,
 out10_ready_node3, out11_ready_node3, 
 clk); 
  
-input [4:0] x0_node0, x1_node0, x2_node0, x3_node0; 
-input [4:0] x0_node1, x1_node1, x2_node1, x3_node1; 
-input [4:0] x0_node2, x1_node2, x2_node2, x3_node2; 
-input [4:0] x0_node3, x1_node3, x2_node3, x3_node3; 
-input [4:0] w04, w14, w24, w34; 
-input [4:0] w05, w15, w25, w35; 
-input [4:0] w06, w16, w26, w36; 
-input [4:0] w07, w17, w27, w37; 
-input [4:0] w48, w58, w68, w78; 
-input [4:0] w49, w59, w69, w79; 
+input logic signed[4:0] x0_node0, x1_node0, x2_node0, x3_node0; 
+input logic signed[4:0] x0_node1, x1_node1, x2_node1, x3_node1; 
+input logic signed[4:0] x0_node2, x1_node2, x2_node2, x3_node2; 
+input logic signed[4:0] x0_node3, x1_node3, x2_node3, x3_node3; 
+input logic signed[4:0] w04, w14, w24, w34; 
+input logic signed[4:0] w05, w15, w25, w35; 
+input logic signed[4:0] w06, w16, w26, w36; 
+input logic signed[4:0] w07, w17, w27, w37; 
+input logic signed[4:0] w48, w58, w68, w78; 
+input logic signed[4:0] w49, w59, w69, w79; 
 input clk; 
-input in_ready
+input in_ready;
 
-output [20:0] out0_node0, out1_node0
-output [20:0] out0_node1, out1_node1; 
-output [20:0] out0_node2, out1_node2; 
-output [20:0] out0_node3, out1_node3; 
-output out10_ready_node0, out11_ready_node0; 
-output out10_ready_node1, out11_ready_node1; 
-output out10_ready_node2, out11_ready_node2; 
-output out10_ready_node3, out11_ready_node3; 
+output logic signed[20:0] out0_node0, out1_node0;
+output logic signed[20:0] out0_node1, out1_node1; 
+output logic signed[20:0] out0_node2, out1_node2; 
+output logic signed[20:0] out0_node3, out1_node3; 
+output logic out10_ready_node0, out11_ready_node0; 
+output logic out10_ready_node1, out11_ready_node1; 
+output logic out10_ready_node2, out11_ready_node2; 
+output logic out10_ready_node3, out11_ready_node3; 
 
 //Implementation of GNN 
+logic rst_n;
+assign rst_n = 1'b1;
 logic[3:0] agg_ready;
 
 //node 0 aggregation
@@ -172,15 +174,6 @@ DNN node3(
 );
 
 //Perform output aggregation
-output [20:0] out0_node0, out1_node0
-output [20:0] out0_node1, out1_node1; 
-output [20:0] out0_node2, out1_node2; 
-output [20:0] out0_node3, out1_node3; 
-output out10_ready_node0, out11_ready_node0; 
-output out10_ready_node1, out11_ready_node1; 
-output out10_ready_node2, out11_ready_node2; 
-output out10_ready_node3, out11_ready_node3; 
-
 //node0
 always_ff@(posedge clk, negedge rst_n)begin
     if(~rst_n)begin
