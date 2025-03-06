@@ -6,9 +6,9 @@ the Milestone 1 of ECE 755 course project.
 
 module DNN_v2
     #(
-        parameter input_width = 5;
-        parameter hidden_width = 12;
-        parameter output_width = 17;
+        parameter input_width = 5,
+        parameter hidden_width = 12,
+        parameter output_width = 17
      )
     (
         // Universal Signals
@@ -55,8 +55,8 @@ logic signed [hidden_width-1:0] relu_out2;
 logic signed [hidden_width-1:0] relu_out3;
 
 // Instantiating the Input Layer
-Input_layer_v2 iInput
-    #(input_width, input_width)
+Input_layer_v2
+    #(input_width, input_width) iInput
     (
         // Universal Signals
         .clk(clk),
@@ -73,8 +73,8 @@ Input_layer_v2 iInput
     );
 
 // Instantiating the Hidden Layer
-Hidden_layer_v2 iHidden
-    #(input_width, hidden_width)
+Hidden_layer_v2
+    #(input_width, hidden_width) iHidden
     (
         // Universal Signals
         .clk(clk),
@@ -97,8 +97,8 @@ Hidden_layer_v2 iHidden
     );
 
 // Instantiating the ReLU Module
-ReLU_v2 iReLU
-    #(hidden_width, hidden_width)
+ReLU_v2
+    #(hidden_width, hidden_width) iReLU
     (
         // ReLU Input Ready
         .input_ready(hidden_ready),
@@ -113,8 +113,8 @@ ReLU_v2 iReLU
     );
 
 // Instantiating the Output Layer
-Output_layer_v2 iOutput
-    #(hidden_width, output_width)
+Output_layer_v2
+    #(hidden_width, output_width) iOutput
     (
         // Universal Signals
         .clk(clk),

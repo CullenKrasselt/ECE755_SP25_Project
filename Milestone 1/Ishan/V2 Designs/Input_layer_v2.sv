@@ -13,8 +13,8 @@ Node0: // Recheck the values
 
 module Input_layer_v2
     #(
-        parameter input_width  = 5;
-        parameter output_width = 5;
+        parameter input_width  = 5,
+        parameter output_width = 5
      )
     (
         // Universal Inputs

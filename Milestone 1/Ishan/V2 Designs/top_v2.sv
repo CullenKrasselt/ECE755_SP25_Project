@@ -5,9 +5,9 @@ This final top file is for the Milestone 1 for ECE 755 Project.
 
 module top_v2 
     #(
-        parameter input_width = 5;
-        parameter hidden_width = 12;
-        parameter output_width = 17;
+        parameter input_width = 5,
+        parameter hidden_width = 12,
+        parameter output_width = 17
      )
     (
         x0, x1, x2, x3,
@@ -41,6 +41,6 @@ logic rst_n;
 assign rst_n = 1'b1;
 // Implementation of the neural network 
 // Instantiating the DNN
-DNN_v2 iDNN #(input_width, hidden_width, output_width) (.*);
+DNN_v2 #(input_width, hidden_width, output_width) iDNN (.*);
 
 endmodule
