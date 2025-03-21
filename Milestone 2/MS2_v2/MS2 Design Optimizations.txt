@@ -1,0 +1,17 @@
+Design Notes for Milestone 2 for ECE 755 Project.
+Improvements made to MS1 Design:
+    Parameterized Modules:
+        Rebuilt the Modules in a parameterized fashion. 
+        All modules now accept parameters for input, hidden 
+        & output widths. 
+        This improves the reusability of the designs. 
+        
+    Improved Power Conscious Design:
+        By implementing the input mux before the multiplier, 
+        we have ensured that all logic synthesized will always 
+        be selecting the inputs for the multiplier, which will
+        improve power savings as inputs which are not ready will 
+        simply cause a multiplication with 0, saving power.
+
+    The MS1 design optimizations are in place aiming to provide 
+    equal workload distribution for every pipeline stage. 

@@ -1,0 +1,23 @@
+ 
+****************************************
+check_design summary:
+Version:     V-2023.12-SP5
+Date:        Thu Mar 20 17:44:11 2025
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Cells                                                               9
+    Cells do not drive (LINT-1)                                     9
+--------------------------------------------------------------------------------
+
+Warning: In design 'top', cell 'B_3' does not drive any nets. (LINT-1)
+Warning: In design 'top', cell 'B_5' does not drive any nets. (LINT-1)
+Warning: In design 'top', cell 'B_7' does not drive any nets. (LINT-1)
+Warning: In design 'top', cell 'B_9' does not drive any nets. (LINT-1)
+Warning: In design 'top', cell 'B_11' does not drive any nets. (LINT-1)
+Warning: In design 'top', cell 'B_13' does not drive any nets. (LINT-1)
+Warning: In design 'top', cell 'B_15' does not drive any nets. (LINT-1)
+Warning: In design 'top', cell 'B_17' does not drive any nets. (LINT-1)
+Warning: In design 'ReLU_v2_input_width14_output_width14', cell 'B_4' does not drive any nets. (LINT-1)
+1

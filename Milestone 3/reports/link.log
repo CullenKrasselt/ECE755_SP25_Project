@@ -1,0 +1,13 @@
+
+  Linking design 'top'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  top                         /filespace/i/imoondra/MS3/top.db
+  asap7sc7p5t_AO_RVT_TT_nldm_211120 (library) /filespace/i/imoondra/MS3/NLDM/asap7sc7p5t_AO_RVT_TT_nldm_211120.db
+  asap7sc7p5t_OA_RVT_TT_nldm_211120 (library) /filespace/i/imoondra/MS3/NLDM/asap7sc7p5t_OA_RVT_TT_nldm_211120.db
+  asap7sc7p5t_SIMPLE_RVT_TT_nldm_211120 (library) /filespace/i/imoondra/MS3/NLDM/asap7sc7p5t_SIMPLE_RVT_TT_nldm_211120.db
+  asap7sc7p5t_INVBUF_RVT_TT_nldm_211120 (library) /filespace/i/imoondra/MS3/NLDM/asap7sc7p5t_INVBUF_RVT_TT_nldm_211120.db
+  asap7sc7p5t_SEQ_RVT_TT_nldm_220123 (library) /filespace/i/imoondra/MS3/NLDM/asap7sc7p5t_SEQ_RVT_TT_nldm_220123.db
+  * (5 designs)               /filespace/i/imoondra/MS3/Hidden_layer_v2_input_width7_output_width14.db, etc
+
+1

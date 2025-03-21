@@ -1,0 +1,47 @@
+Coverage Report Summary Data by file
+
+=================================================================================
+=== File: /filespace/i/imoondra/ECE 755/Simulation/MS2/GNN.sv
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                       208       200         8    96.15%
+    Statements                      56        48         8    85.71%
+    Toggles                       2422      1451       971    59.90%
+
+=================================================================================
+=== File: /filespace/i/imoondra/ECE 755/Simulation/MS2/Hidden_layer_v2.sv
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Toggles                        344       269        75    78.19%
+
+=================================================================================
+=== File: /filespace/i/imoondra/ECE 755/Simulation/MS2/Neuron_v2.sv
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                        12        11         1    91.66%
+    Statements                      13        12         1    92.30%
+    Toggles                        524       456        68    87.02%
+
+=================================================================================
+=== File: /filespace/i/imoondra/ECE 755/Simulation/MS2/Output_layer_v2.sv
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Toggles                        302       207        95    68.54%
+
+=================================================================================
+=== File: /filespace/i/imoondra/ECE 755/Simulation/MS2/ReLU_v2.sv
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                        16        14         2    87.50%
+    Conditions                       4         2         2    50.00%
+    Statements                       4         4         0   100.00%
+    Toggles                        228       149        79    65.35%
+
+
+Total Coverage By File (code coverage only, filtered view): 74.82%
+

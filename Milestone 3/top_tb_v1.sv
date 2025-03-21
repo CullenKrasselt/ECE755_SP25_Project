@@ -57,7 +57,7 @@ top top(.x0_node0(x0_node0), .x1_node0(x1_node0), .x2_node0(x2_node0), .x3_node0
 initial begin
 
     clk = 0;
-    rst_n = 0;
+    rst_n = 1;
     in_ready = 1; 
     
     x0_node0 = 5'b0100;
@@ -105,9 +105,11 @@ initial begin
     w69 = 5'b10001;
     w79 = 5'b00110;
 
+    // Reset Checks
     rst_n = 0;
     #40;
     rst_n = 1;
+    #40;
 
     #40
     if (out0_node0 == -20'd6358)
@@ -329,9 +331,9 @@ initial begin
         $display("-----------out1_node3 is incorrect-----------");
 
     $display("--------------------------------------");
-    $display("Tests Complete!");
+    $display("All Tests Complete!");
     #10;
-    $stop;
+    $stop();
 
 end
 
