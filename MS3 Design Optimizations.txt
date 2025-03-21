@@ -1,0 +1,46 @@
+Design Notes for Milestone 3 of ECE 755 Course Project:
+Improvements made to the GNN for Synthesis:
+
+    0. Asynchronous Falling Edge Reset Signal:
+        We integrated an asynchronous falling edge reset signal 
+        to all our important flip flops of the design, following 
+        strong digital design principles. 
+        We also tested & verified the reset functionality.
+        
+    1. Power Gating:
+        By implementing power gating on the input aggregator, 
+        we have achieved a significant 15%+ power saving for
+        the entire design. 
+
+    2. Improved Pipelining:
+        Understanding the critical path of our design, which 
+        earlier was: Hidden Addition --> ReLU --> Aggregator. 
+        We then reworked the pipeline such that now the 
+        critical path for the design is:
+        Aggregator_FF --> Output_Layer_Multiplier --> Output_Layer_FF
+        This critical path is the one we designed our GNN around.
+
+    3. High Speed Operations:
+        With this crafted critical path, we were able to push
+        the ASAP 7nm Library & our GNN design to the limits, 
+        Achieving: 690 ps --> 1.449 GHz @ 3.982 k sq. microns & 6.622 mW
+        
+        We also found a sweet spot "Knee Point":
+        Achieving: 955 ps --> 1.047 GHz @ 2.814 k sq. microns & 4.113 mW
+        
+        Our most Area-Efficient run:
+        Achieving: 1250 ps --> 0.80 GHz @ 2.784 k sq. microns & 3.099 mW
+
+    4. Optimized Critical Slack:
+        With power gating off the critical path, we got 15%+ power savings,
+        while our critical path delay, under even the most relaxed timings, 
+        remaining a speedy 964 ps. 
+        This allowed the tool to utilize exclusively Ripple Carry Adders, 
+        & still meet timing at well over GHz frequencies. 
+
+    5. Extensive Testing:
+        We tested our design for various synthesis parameters extensively, 
+        spending over 5hrs combined on the Design Vision tool, to note the
+        linear growth rates of power & frequency while also finding 
+        special inflection points, where the tool switched from a 
+        Ripple Carry Adder to a Carry Select Adder, which was above 1.1 GHz.
