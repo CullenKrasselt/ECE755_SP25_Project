@@ -20,6 +20,7 @@ catch { setOptMode -autoViewHoldTargetSlack 200 }
 catch { setOptMode -deleteInst true }
 catch { setOptMode -drcMargin 0 }
 catch { setOptMode -fixDrc true }
+catch { setOptMode -fixHoldAllowResizing true }
 catch { setOptMode -holdTargetSlack 0.02 }
 catch { setOptMode -optimizeFF true }
 catch { setOptMode -preserveAllSequential false }
@@ -35,7 +36,7 @@ catch {setNanoRouteMode -quiet -drouteStartIteration 0}
 catch {setNanoRouteMode -quiet -drouteUseLefPinTaperRule true}
 catch {setNanoRouteMode -quiet -drouteUseMinSpacingForBlockage auto}
 catch {setNanoRouteMode -quiet -drouteUseMultiCutViaEffort "true"}
-catch {setNanoRouteMode -quiet -extractDesignSignature 33133476}
+catch {setNanoRouteMode -quiet -extractDesignSignature 57406435}
 catch {setNanoRouteMode -quiet -extractRcModelFile "${::IMEX::libVar}/misc/rc_model.bin"}
 catch {setNanoRouteMode -quiet -extractThirdPartyCompatible false}
 catch {setNanoRouteMode -quiet -grouteExpTdStdDelay 7.800000}
