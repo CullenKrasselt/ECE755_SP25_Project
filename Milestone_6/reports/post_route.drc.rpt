@@ -1,0 +1,55 @@
+#-check_same_via_cell true               # bool, default=false, user setting
+ *** Starting Verify DRC (MEM: 4929.5) ***
+
+  VERIFY DRC ...... Starting Verification
+  VERIFY DRC ...... Initializing
+  VERIFY DRC ...... Deleting Existing Violations
+  VERIFY DRC ...... Creating Sub-Areas
+  VERIFY DRC ...... Using new threading
+ VERIFY DRC ...... Sub-Area: {0.000 122.112 61.056 183.168} 13 of 36  Thread : 4
+ VERIFY DRC ...... Sub-Area: {0.000 0.000 61.056 61.056} 1 of 36  Thread : 7
+ VERIFY DRC ...... Sub-Area: {244.224 0.000 305.280 61.056} 5 of 36  Thread : 1
+ VERIFY DRC ...... Sub-Area: {0.000 244.224 61.056 305.280} 25 of 36  Thread : 3
+ VERIFY DRC ...... Sub-Area: {122.112 244.224 183.168 305.280} 27 of 36  Thread : 6
+ VERIFY DRC ...... Sub-Area: {244.224 244.224 305.280 305.280} 29 of 36  Thread : 4
+ VERIFY DRC ...... Sub-Area: {122.112 0.000 183.168 61.056} 3 of 36  Thread : 0
+ VERIFY DRC ...... Sub-Area: {122.112 122.112 183.168 183.168} 15 of 36  Thread : 2
+ VERIFY DRC ...... Sub-Area: {244.224 122.112 305.280 183.168} 17 of 36  Thread : 5
+ VERIFY DRC ...... Sub-Area: {305.280 0.000 363.440 61.056} 6 of 36  Thread : 1
+ VERIFY DRC ...... Sub-Area: {0.000 61.056 61.056 122.112} 7 of 36  Thread : 7
+ VERIFY DRC ...... Sub-Area: {0.000 183.168 61.056 244.224} 19 of 36  Thread : 3
+ VERIFY DRC ...... Sub-Area: {0.000 305.280 61.056 363.440} 31 of 36  Thread : 6
+ VERIFY DRC ...... Sub-Area: {183.168 244.224 244.224 305.280} 28 of 36  Thread : 4
+ VERIFY DRC ...... Sub-Area: {305.280 61.056 363.440 122.112} 12 of 36  Thread : 1
+ VERIFY DRC ...... Sub-Area: {305.280 244.224 363.440 305.280} 30 of 36  Thread : 2
+ VERIFY DRC ...... Sub-Area: {183.168 122.112 244.224 183.168} 16 of 36  Thread : 5
+ VERIFY DRC ...... Sub-Area: {183.168 0.000 244.224 61.056} 4 of 36  Thread : 0
+ VERIFY DRC ...... Sub-Area: {61.056 0.000 122.112 61.056} 2 of 36  Thread : 7
+ VERIFY DRC ...... Sub-Area: {305.280 122.112 363.440 183.168} 18 of 36  Thread : 1
+ VERIFY DRC ...... Sub-Area: {183.168 305.280 244.224 363.440} 34 of 36  Thread : 4
+ VERIFY DRC ...... Sub-Area: {61.056 244.224 122.112 305.280} 26 of 36  Thread : 6
+ VERIFY DRC ...... Sub-Area: {61.056 122.112 122.112 183.168} 14 of 36  Thread : 3
+ VERIFY DRC ...... Sub-Area: {305.280 305.280 363.440 363.440} 36 of 36  Thread : 2
+ VERIFY DRC ...... Sub-Area: {183.168 183.168 244.224 244.224} 22 of 36  Thread : 5
+ VERIFY DRC ...... Sub-Area: {305.280 183.168 363.440 244.224} 24 of 36  Thread : 1
+ VERIFY DRC ...... Sub-Area: {183.168 61.056 244.224 122.112} 10 of 36  Thread : 0
+ VERIFY DRC ...... Sub-Area: {61.056 305.280 122.112 363.440} 32 of 36  Thread : 6
+ VERIFY DRC ...... Sub-Area: {61.056 61.056 122.112 122.112} 8 of 36  Thread : 3
+ VERIFY DRC ...... Sub-Area: {244.224 305.280 305.280 363.440} 35 of 36  Thread : 2
+ VERIFY DRC ...... Sub-Area: {61.056 183.168 122.112 244.224} 20 of 36  Thread : 7
+ VERIFY DRC ...... Thread : 5 finished.
+ VERIFY DRC ...... Sub-Area: {244.224 183.168 305.280 244.224} 23 of 36  Thread : 1
+ VERIFY DRC ...... Thread : 1 finished.
+ VERIFY DRC ...... Sub-Area: {244.224 61.056 305.280 122.112} 11 of 36  Thread : 0
+ VERIFY DRC ...... Thread : 0 finished.
+ VERIFY DRC ...... Sub-Area: {122.112 305.280 183.168 363.440} 33 of 36  Thread : 6
+ VERIFY DRC ...... Thread : 6 finished.
+ VERIFY DRC ...... Sub-Area: {122.112 61.056 183.168 122.112} 9 of 36  Thread : 3
+ VERIFY DRC ...... Thread : 3 finished.
+ VERIFY DRC ...... Sub-Area: {122.112 183.168 183.168 244.224} 21 of 36  Thread : 7
+ VERIFY DRC ...... Thread : 7 finished.
+
+  Verification Complete : 0 Viols.
+
+ *** End Verify DRC (CPU: 0:00:08.7  ELAPSED TIME: 2.00  MEM: 365.1M) ***
+

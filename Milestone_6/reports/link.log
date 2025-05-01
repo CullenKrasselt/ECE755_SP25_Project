@@ -1,0 +1,16 @@
+Loading db file '/filespace/k/krasselt/ECE755/ECE755_SP25_Project/Milestone_3/asap7sc7p5t_28/LIB/NLDM/asap7sc7p5t_AO_RVT_TT_nldm_211120.db'
+Loading verilog file '/filespace/k/krasselt/ECE755/ECE755_SP25_Project/Milestone_6/outputs/top.apr.v'
+Loading db file '/filespace/k/krasselt/ECE755/ECE755_SP25_Project/Milestone_3/asap7sc7p5t_28/LIB/NLDM/asap7sc7p5t_OA_RVT_TT_nldm_211120.db'
+Loading db file '/filespace/k/krasselt/ECE755/ECE755_SP25_Project/Milestone_3/asap7sc7p5t_28/LIB/NLDM/asap7sc7p5t_SIMPLE_RVT_TT_nldm_211120.db'
+Loading db file '/filespace/k/krasselt/ECE755/ECE755_SP25_Project/Milestone_3/asap7sc7p5t_28/LIB/NLDM/asap7sc7p5t_INVBUF_RVT_TT_nldm_211120.db'
+Loading db file '/filespace/k/krasselt/ECE755/ECE755_SP25_Project/Milestone_3/asap7sc7p5t_28/LIB/NLDM/asap7sc7p5t_SEQ_RVT_TT_nldm_220123.db'
+Linking design top...
+Information: 8 (19.05%) library cells are unused in library asap7sc7p5t_AO_RVT_TT_nldm_211120..... (LNK-045)
+Information: 3 ( 8.82%) library cells are unused in library asap7sc7p5t_OA_RVT_TT_nldm_211120..... (LNK-045)
+Information: 9 (16.07%) library cells are unused in library asap7sc7p5t_SIMPLE_RVT_TT_nldm_211120..... (LNK-045)
+Information: 14 (37.84%) library cells are unused in library asap7sc7p5t_INVBUF_RVT_TT_nldm_211120..... (LNK-045)
+Information: 31 (93.94%) library cells are unused in library asap7sc7p5t_SEQ_RVT_TT_nldm_220123..... (LNK-045)
+Information: total 65 library cells are unused (LNK-046)
+Design 'top' was successfully linked.
+Information: There are 49681 leaf cells, ports, hiers and 51090 nets in the design (LNK-047)
+1
